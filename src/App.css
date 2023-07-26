@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  background: none;
+}
+h1{
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+h2{
+  font-size: clamp(1.8rem, 2vw, 2.5rem);
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+h3{
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+h4{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-family);
+}
+a{
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-family: var(--font-family);
+}
+a:hover {
+  color: var(--color-secondary);
+}
+p{
+  font-family: var(--font-family);
+  line-height: 32px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+}

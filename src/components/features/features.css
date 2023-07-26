@@ -1,0 +1,71 @@
+.br-features-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1f0f2b4;
+    padding: 3rem;
+}
+.br-features-card{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    width: 70%;
+    margin: 3rem 0;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+}
+.br-features-card:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.br-features-card-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 70%;
+    border-radius: 1rem;
+    background-color: #d1cdcd;
+}
+.br-features-card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.br-features-card-content{
+    position: absolute;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-right: .5rem solid #c9f2fb;
+    background-color: #ebe2e2;
+}
+.br-features-card:nth-child(2n) .br-features-card-content{
+    right: 0;
+    transform: translateX(-100%);
+    border: none;
+    border-left: .5rem solid #c9f2fb;
+}
+.br-features-card-content h3{
+    text-decoration: underline;
+    padding-bottom: 1rem;
+}
+.br-features-card-content button{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #c9f2fb;
+    cursor: pointer;
+}
