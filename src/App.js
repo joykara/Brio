@@ -1,15 +1,15 @@
 import './App.css';
-import { Articles, Features, Footer, Header, Navbar } from './components';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Homepage, OurWork } from './pages';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Header />
-      <Articles />
-      <Features />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Homepage />} />
+        <Route path="/our-work" element={<OurWork />} />
+      </Routes>
+    </Router>
   );
 }
 
