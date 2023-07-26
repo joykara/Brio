@@ -15,17 +15,17 @@ const Navbar = () => {
             <div className="br-navbar">
                 <div className="br-navbar-logo">
                       <img src="" alt="Brio Logo" />
-                      <p>Brio Ent.</p>
+                      <Link to={'/'}><p>Brio Ent.</p></Link>
                 </div>
                 <nav className="br-navbar-menu">
                     <ul>
                         <li><Link to={'/about-us'}>ABOUT US</Link></li>
                         <li><Link to={'/our-work'}>OUR WORK</Link></li>
-                        <li><Link to={'/'}>OUR PROCESS</Link></li>
-                        <li><Link to={'/'}>SERVICES</Link></li>
-                        <li><Link to={'/'}>CONTACT US</Link></li>
+                        <li><Link to={'/our-process'}>OUR PROCESS</Link></li>
+                        <li><Link to={'/services'}>SERVICES</Link></li>
+                        <li><Link to={'/contact-us'}>CONTACT US</Link></li>
                         <li><Link to={'/'}>MARKET PLACE</Link></li>
-                        <li><Link to={'/'}>BLOG</Link></li>
+                        <li><Link to={'/blog'}>BLOG</Link></li>
                     </ul>
                 </nav>
                 <div className={`br-navbar-toggle ${toggleMenu ? 'active' : ''}`} onClick={handleToggle}>
@@ -35,11 +35,11 @@ const Navbar = () => {
                         <ul>
                             <li><Link to={'/about-us'}>ABOUT US</Link></li>
                             <li><Link to={'/our-work'}>OUR WORK</Link></li>
-                            <li><Link to={'/'}>OUR PROCESS</Link></li>
-                            <li><Link to={'/'}>SERVICES</Link></li>
-                            <li><Link to={'/'}>CONTACT US</Link></li>
+                            <li><Link to={'/our-process'}>OUR PROCESS</Link></li>
+                            <li><Link to={'/services'}>SERVICES</Link></li>
+                            <li><Link to={'/contact-us'}>CONTACT US</Link></li>
                             <li><Link to={'/'}>MARKET PLACE</Link></li>
-                            <li><Link to={'/'}>BLOG</Link></li>
+                            <li><Link to={'/blog'}>BLOG</Link></li>
                         </ul>
                     </nav>
                     )}
