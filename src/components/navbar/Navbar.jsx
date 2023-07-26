@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -18,13 +19,13 @@ const Navbar = () => {
                 </div>
                 <nav className="br-navbar-menu">
                     <ul>
-                        <li><a href="/">ABOUT US</a></li>
-                        <li><a href="/">OUR WORK</a></li>
-                        <li><a href="/">OUR PROCESS</a></li>
-                        <li><a href="/">SERVICES</a></li>
-                        <li><a href="/">CONTACT US</a></li>
-                        <li><a href="/">MARKET PLACE</a></li>
-                        <li><a href="/">BLOG</a></li>
+                        <li><Link to={'/about-us'}>ABOUT US</Link></li>
+                        <li><Link to={'/our-work'}>OUR WORK</Link></li>
+                        <li><Link to={'/'}>OUR PROCESS</Link></li>
+                        <li><Link to={'/'}>SERVICES</Link></li>
+                        <li><Link to={'/'}>CONTACT US</Link></li>
+                        <li><Link to={'/'}>MARKET PLACE</Link></li>
+                        <li><Link to={'/'}>BLOG</Link></li>
                     </ul>
                 </nav>
                 <div className={`br-navbar-toggle ${toggleMenu ? 'active' : ''}`} onClick={handleToggle}>
@@ -32,13 +33,13 @@ const Navbar = () => {
                     {toggleMenu && (
                     <nav className="br-navbar-menu-mobile">
                         <ul>
-                            <li><a href="/">ABOUT US</a></li>
-                            <li><a href="/">OUR WORK</a></li>
-                            <li><a href="/">OUR PROCESS</a></li>
-                            <li><a href="/">SERVICES</a></li>
-                            <li><a href="/">CONTACT US</a></li>
-                            <li><a href="/">MARKET PLACE</a></li>
-                            <li><a href="/">BLOG</a></li>
+                            <li><Link to={'/about-us'}>ABOUT US</Link></li>
+                            <li><Link to={'/our-work'}>OUR WORK</Link></li>
+                            <li><Link to={'/'}>OUR PROCESS</Link></li>
+                            <li><Link to={'/'}>SERVICES</Link></li>
+                            <li><Link to={'/'}>CONTACT US</Link></li>
+                            <li><Link to={'/'}>MARKET PLACE</Link></li>
+                            <li><Link to={'/'}>BLOG</Link></li>
                         </ul>
                     </nav>
                     )}
