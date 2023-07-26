@@ -1,7 +1,7 @@
 .br-our-work-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 3rem 4rem;
+    grid-gap: 4rem;
     padding: 3rem 0;
     background-color: #ffffff;
     width: 80%;
