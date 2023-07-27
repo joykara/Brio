@@ -64,6 +64,10 @@
     .br-footer-card{
         flex-direction: column;
     }
+    .br-footer-nav-button{
+        padding: 1rem 0;
+        width: 100%;
+    }
     .br-footer-card-content{
         flex-direction: column;
     }

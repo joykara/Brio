@@ -22,7 +22,7 @@ const Navbar = () => {
                         <li><Link to={'/about-us'}>ABOUT US</Link></li>
                         <li><Link to={'/our-work'}>OUR WORK</Link></li>
                         <li><Link to={'/our-process'}>OUR PROCESS</Link></li>
-                        <li><Link to={'/services'}>SERVICES</Link></li>
+                        <li><Link to={'/our-services'}>SERVICES</Link></li>
                         <li><Link to={'/contact-us'}>CONTACT US</Link></li>
                         <li><Link to={'/'}>MARKET PLACE</Link></li>
                         <li><Link to={'/blog'}>BLOG</Link></li>
@@ -36,7 +36,7 @@ const Navbar = () => {
                             <li><Link to={'/about-us'}>ABOUT US</Link></li>
                             <li><Link to={'/our-work'}>OUR WORK</Link></li>
                             <li><Link to={'/our-process'}>OUR PROCESS</Link></li>
-                            <li><Link to={'/services'}>SERVICES</Link></li>
+                            <li><Link to={'/our-services'}>SERVICES</Link></li>
                             <li><Link to={'/contact-us'}>CONTACT US</Link></li>
                             <li><Link to={'/'}>MARKET PLACE</Link></li>
                             <li><Link to={'/blog'}>BLOG</Link></li>

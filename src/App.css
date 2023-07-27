@@ -41,7 +41,7 @@ a{
 a:hover {
   color: var(--color-secondary);
 }
-p{
+p, li{
   font-family: var(--font-family);
   line-height: 32px;
   font-size: clamp(1rem, 1.5vw, 1.2rem);
