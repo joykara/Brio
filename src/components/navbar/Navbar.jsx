@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="br-navbar">
                 <div className="br-navbar-logo">
                       <img src="" alt="Brio Logo" />
-                      <Link to={'/'}><p>Brio Ent.</p></Link>
+                      <Link to={'/'}><p>Brio Animation</p></Link>
                 </div>
                 <nav className="br-navbar-menu">
                     <ul>

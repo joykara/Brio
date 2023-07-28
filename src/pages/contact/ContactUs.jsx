@@ -30,7 +30,7 @@ const ContactUs = () => {
 
       console.log(response);
       // Clear the form after successful submission
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       console.error(error);
     }
